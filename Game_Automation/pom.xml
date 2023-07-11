@@ -74,4 +74,54 @@
             <artifactId>selenium-server</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.5</version>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${project.build.directory}/generated-sources</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.paypal.selion</groupId>
+                <artifactId>SeLion-Code-Generator</artifactId>
+                <version>1.2.0</version>
+                <executions>
+                    <execution></execution>
+                </executions>
+                <configuration>
+                    <basePackage>com</basePackage>
+                </configuration>
+            </plugin>
+        <plugin>
+            <groupId>com.paypal.selion</groupId>
+            <artifactId>SeLion-Code-Generator</artifactId>
+            <version>1.2.0</version>
+            <executions>
+                <execution>
+                    <phase>generate-sources</phase>
+                    <goals>
+                        <goal>generate</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+        </plugins>
+
+    </build>
 </project>

@@ -1,0 +1,55 @@
+baseClass: "com.paypal.selion.testcomponents.BasicPageImpl"
+pageTitle:
+  US: "Checkers - Games for the Brain"
+elements:
+  restartLink:
+    locators:
+      US: "css=.footnote/a[contains(@href,'./')]"
+  rulesLink:
+    locators:
+      US: "css=.footnote/a[contains(@href,'https://en.wikipedia.org/wiki/English_draughts#Starting_position')]"
+  boardLabel:
+    locators:
+      US: "css=#board"
+  makeAMoveLabel:
+    locators:
+      US: "css=#message"
+  space22Image:
+    locators:
+      US: "//img[@name='space22']"
+  space13Image:
+    locators:
+      US: "//img[@name='space13']"
+  space42Image:
+    locators:
+      US: "//img[@name='space42']"
+  space53Image:
+    locators:
+      US: "//img[@name='space53']"
+  space31Image:
+    locators:
+      US: "//img[@name='space31']"
+  space33Image:
+    locators:
+      US: "//img[@name='space33']"
+  space51Image:
+    locators:
+      US: "//img[@name='space51']"
+  space62Image:
+    locators:
+      US: "//img[@name='space62']"
+  space11Image:
+    locators:
+      US: "//img[@name='space11']"
+  firstBoardRowLabel:
+    locators:
+      US: "css=#board div:nth-child(8)"
+  secondBoardRowLabel:
+    locators:
+      US: "css=#board div:nth-child(7)"
+  thirdBoardRowLabel:
+    locators:
+      US: "css=#board div:nth-child(6)"
+
+
+
